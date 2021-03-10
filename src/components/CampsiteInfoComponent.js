@@ -16,7 +16,7 @@ function RenderCampsite({ campsite }) {
 }
 
 function RenderComments({ comments }) {
-    console.log(comments);
+    
     if (comments) {
 
         return (
