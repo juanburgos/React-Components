@@ -3,6 +3,25 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 
+const RenderPartner = ({ name, image, description }) => {
+    if ({}) {
+        return (
+            <React.Fragment>
+                <Media object="true" src={image} alt={name} width="150" />
+                <Media body="true" className="ml-5 mb-4">
+                    <Media heading="true">{name}</Media>
+                    {description}
+                </Media>
+            </React.Fragment>
+        );
+    } else {
+        return (
+            <div>Empty void of nothingness</div>
+        );
+    }
+}
+
+
 function About(props) {
 
     const partners = props.partners.map(partner => {
@@ -76,24 +95,5 @@ function About(props) {
         </div>
     );
 }
-
-function RenderPartner({ name, image, description }) {
-    if ({}) {
-        return (
-            <React.Fragment>
-                <Media object="true" src={image} alt={name} width="150" />
-                <Media body="true" className="ml-5 mb-4">
-                    <Media heading="true">{name}</Media>
-                    {description}
-                </Media>
-            </React.Fragment>
-        );
-    } else {
-        return (
-            <div>Empty void of nothingness</div>
-        );
-    }
-}
-
 
 export default About;
