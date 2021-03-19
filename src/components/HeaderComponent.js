@@ -21,7 +21,7 @@ class Header extends Component {
         this.handleLogin = this.handleLogin.bind(this);
     }
 
-    
+
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
