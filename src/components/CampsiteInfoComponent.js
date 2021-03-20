@@ -88,10 +88,7 @@ class CommentForm extends React.Component {
                 rating: false,
                 author: false,
                 text: false
-            }
-        };
-
-        this.state = {
+            },
             isModalOpen: false
         };
 
